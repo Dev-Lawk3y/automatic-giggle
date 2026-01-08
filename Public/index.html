@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GoatBot — Colourful Landing</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo" aria-hidden="true">
+      <!-- simple goat-ish SVG mark -->
+      <svg width="42" height="42" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="10" fill="#fff" opacity="0.08"/>
+        <path d="M6 15c1.5-3 4-5 6-5s4.5 2 6 5" stroke="#fff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M9 9c.6-1 1.6-2 3-2s2.4 1 3 2" stroke="#fff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <h1 class="brand">GoatBot</h1>
+    <nav class="nav">
+      <a class="btn ghost" href="#features">Features</a>
+      <a class="btn" href="https://github.com/Dev-Lawk3y" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <div class="hero-inner">
+      <h2>Colourful, simple, deployable</h2>
+      <p class="lead">A small landing page for GoatBot — ready to deploy on Render with Node.js.</p>
+      <div class="hero-cta">
+        <button id="checkHealth" class="btn primary">Check server</button>
+        <a class="btn outline" href="#features">Explore</a>
+      </div>
+      <div id="status" class="status" aria-live="polite"></div>
+    </div>
+
+    <div class="blobs" aria-hidden="true">
+      <span class="blob b1"></span>
+      <span class="blob b2"></span>
+      <span class="blob b3"></span>
+    </div>
+  </main>
+
+  <section id="features" class="features">
+    <div class="card">
+      <h3>Simple Node server</h3>
+      <p>Express serves static content from /public — deployable on Render as a Node Web Service.</p>
+    </div>
+
+    <div class="card">
+      <h3>Gradient theme</h3>
+      <p>Red → black → green gradient with accessible text and responsive layout.</p>
+    </div>
+
+    <div class="card">
+      <h3>Lightweight</h3>
+      <p>Small assets, no frameworks required — easy to extend into a full site or dashboard.</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <small>© <span id="year"></span> GoatBot — built by Lawkey Marvelous · Deploy on Render</small>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
