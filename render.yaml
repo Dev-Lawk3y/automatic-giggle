@@ -1,0 +1,11 @@
+version: 1
+services:
+  - type: web
+    name: goatbot-landing
+    env: node
+    plan: free
+    region: oregon
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    autoDeploy: true
+    pullRequestPreview: true
